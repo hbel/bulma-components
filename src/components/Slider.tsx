@@ -14,6 +14,7 @@ interface Props {
     step: number;
     min: number;
     max: number;
+    vertical?: boolean;
 }
 
 const Slider = (props: Props & React.HTMLAttributes<HTMLInputElement>) => {
@@ -40,6 +41,7 @@ const Slider = (props: Props & React.HTMLAttributes<HTMLInputElement>) => {
             props.onChange(parseFloat(e.target.value));
         }}
         disabled={props.disabled}
+        {...{orient: props.vertical ? "vertical" : undefined}}
     />;
 };
 
