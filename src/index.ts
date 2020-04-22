@@ -1,3 +1,4 @@
+export { Size, Color } from "./components/constants";
 export { Button } from "./components/Button";
 export { Buttons } from "./components/Buttons";
 export * as Card from "./components/Card";
@@ -13,3 +14,6 @@ export * as Tab from "./components/Tab";
 export * as Tabs from "./components/Tabs";
 export * as Tag from "./components/Tag";
 export * as Title from "./components/Title";
+export * as Switch from "./components/Switch";
+export * as Slider from "./components/Slider";
+export * as TextInput from "./components/TextInput";

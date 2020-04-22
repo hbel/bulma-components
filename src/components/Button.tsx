@@ -1,11 +1,12 @@
 import React, { AnchorHTMLAttributes } from "react";
 import { maybe } from "tsmonads";
 import { classNames, is, to } from "./utils";
+import { Size, Color } from "./constants";
 
 export interface ButtonProps {
-    type?: "primary" | "link" | "info" | "success" | "warning" | "danger";
+    type?: Color | "link";
     color?: "white" | "light" | "dark" | "black" | "text";
-    size?: "small" | "normal" | "medium" | "large";
+    size?: Size;
 
     onClick?: ((event: React.MouseEvent<HTMLButtonElement | HTMLAnchorElement>) => void) |
              (() => void);
